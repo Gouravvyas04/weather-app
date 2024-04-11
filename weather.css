@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    width: 100%;
+    max-width: 40vw;
+    color: white;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 10vh;
+    height: 100%;
+}
+
+.search{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search input{
+    height: 40px;
+    margin-right: 16px;
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 30px;
+    margin-right: 18px;
+    font-size: 18px;
+    color: rgb(105, 97, 97);
+    flex: 1;
+    padding: 10px 25px;
+    height: 10vh;
+    width: 100%;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    width: 5vw;
+    height: 10vh;
+    background: #ebfffc;
+    cursor: pointer;
+}
+
+.search img{
+    width: 20px;
+}
+
+.weather-icon{
+    width: 8vw;
+    margin-top: 4vh;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.col img{
+    width: 3vw;
+    margin-right: 10px;
+}
+
+.humidity{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
